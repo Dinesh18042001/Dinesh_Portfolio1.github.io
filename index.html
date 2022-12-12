@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!--------- this is java-script code take from https://fontawesome.com ----------->
+  <script src="https://kit.fontawesome.com/12d6743889.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="projects2/index.html">Projects</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+
+      </nav>
+      <div class="header-text">
+        <p>UI/UX Designer</p>
+        <h1>Hi, I'm <span>Dinesh Rathour</span> <br>From Pilibhit</h1>
+      </div>
+    </div>
+  </div>
+  <!-------------------About Page -------------------->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/p_1.JPG" alt="">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>Hello,My name is DINESH KUMAR, I am 21 years old.I from from PILIBHIT,UP. I am pursuing my graduation from, Shri Siddhivinayak Institute of Technology,Bareilly & I am compaleted my Schooling from Adarsh Inter Collage,PILIBHIT. I have a good knowledge for various Technology and Programming Languages Like-- <br>
+            C/C++, Python Programming, Web Technology, ReactJS, NodeJS, HTML+CSS, JavaScript, PHP .... <br> And Hobbies are like Tree Plantation,Watching Movies, Travelling, Online Gaming, Cooking etc. </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>UI/UX</span><br>Designing web/app Interfaces</li>
+              <li><span>Web Development</span><br>Designing web Interfaces</li>
+              <li><span>Web Development</span><br>Building Android/iOS app</li>
+              <li><span> Computer Languages</span><br> C/C++ <br> Python </li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2022 - Current</span><br>UI/UX Design Training at It Interface</li>
+              <li><span>2022 - 2023</span><br>Team lead at StarApp LLC.</li>
+              <li><span>2022 - 2023</span><br>UI/UX Design from Greatlearing.</li>
+              <li><span>7/2022 - 9/2023</span><br> Training Internship from Intenshala Platform.</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2023</span><br>B.Tech form SSVIT Bearilly</li>
+              <li><span>2019</span><br>XII from Aadresh inter collage Pilibhit</li>
+              <li><span>2017</span><br>X from Aadresh inter collage Pilibhit</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--------------- services ---------------->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+
+        <div>
+          <!--------- this is icon take from https://fontawesome.com ----------->
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Design</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ut maiores rerum dolore harum dolor minima
+            optio perferendis accusantium itaque.</p>
+          <a href="#">Learn more</a>
+        </div>
+
+        <div>
+          <i class="fa-sharp fa-solid fa-crop"></i>
+          <h2>UI/UX Design</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ut maiores rerum dolore harum dolor minima
+            optio perferendis accusantium itaque.</p>
+          <a href="#">Learn more</a>
+        </div>
+
+        <div>
+          <i class="fa-brands fa-app-store"></i>
+          <h2>App Design</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ut maiores rerum dolore harum dolor minima
+            optio perferendis accusantium itaque.</p>
+          <a href="#">Learn more</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-------------- portfolio ------------->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="worklist">
+
+        <div class="work">
+          <img src="images/work-1.png">
+          <div class="layer">
+            <h3>Social Media App</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores voluptatum eius repellat doloribus
+              illum libero, eum error nulla consequuntur ullam!</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="images/work-2.png">
+          <div class="layer">
+            <h3>Music App</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores voluptatum eius repellat doloribus
+              illum libero, eum error nulla consequuntur ullam!</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="images/work-3.png">
+          <div class="layer">
+            <h3>Online Shopping App</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores voluptatum eius repellat doloribus
+              illum libero, eum error nulla consequuntur ullam!</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div><br><br>
+
+      <marquee behavior="alternate" scrollamount ="10"><h2> Projects Demo</h2></marquee>
+
+      <a href="projects2/index.html" class="btn">Projects</a>
+    </div>
+  </div>
+
+  <!----------------- Contact page ----------------->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i> Dinesh1804200182@gmail.com</p>
+          <p><i class="fa-sharp fa-solid fa-phone"></i> +91 - 8218475442</p>
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="@DineshRO1514605"><i class="fa-brands fa-twitter"></i></a>
+            <a href="instagram.com/its_rathour_dinesh_"><i class="fa-brands fa-square-instagram"></i></i></a>
+            <a href="https://www.linkedin.com/in/dinesh-kumar-296422231"><i class="fa-brands fa-linkedin"></i></i></a>
+          </div>
+          <a href="images/Resume_1.pdf" download class="btn btn2">Downlord CV</a>
+        </div>
+
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <input type="phonenumber" name="PhoneNumber" placeholder="Enter Your Phone Number" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="copyright">
+      <p>"Education is the possport <i class="fa-solid fa-heart"></i> to the future,for tomorrow belongs to those <i class="fa-solid fa-heart"></i> who prepare for it today..." 
+      </p>
+    </div>
+
+  </div>
+
+
+
+  <!----------------- Java-scrpt-part-1 --------------->
+  <script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+
+  <!--------------- close-manu-javascript-part-2 -------------->
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+  <!------------ copy by github ----------------->
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzjUY1P0myA8kGolSukUdu9TbNSkoUs8KsaxumeR_PHeqDgC5YQuBo2cl1BeMr-Pf4Y/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          msg.innerHTML = "Message send successfully"
+          setTimeout(function () {
+            msg.innerHTML = ""
+          }, 1000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+
+</html>
